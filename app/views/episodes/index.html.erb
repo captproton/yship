@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Episodes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Permalink</th>
+      <th>Description</th>
+      <th>Notes</th>
+      <th>Published at</th>
+      <th>Position</th>
+      <th>Comments count</th>
+      <th>Seconds</th>
+      <th>Asciicasts</th>
+      <th>Legacy</th>
+      <th>File sizes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @episodes.each do |episode| %>
+      <tr>
+        <td><%= episode.name %></td>
+        <td><%= episode.permalink %></td>
+        <td><%= episode.description %></td>
+        <td><%= episode.notes %></td>
+        <td><%= episode.published_at %></td>
+        <td><%= episode.position %></td>
+        <td><%= episode.comments_count %></td>
+        <td><%= episode.seconds %></td>
+        <td><%= episode.asciicasts %></td>
+        <td><%= episode.legacy %></td>
+        <td><%= episode.file_sizes %></td>
+        <td><%= link_to 'Show', episode %></td>
+        <td><%= link_to 'Edit', edit_episode_path(episode) %></td>
+        <td><%= link_to 'Destroy', episode, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Episode', new_episode_path %>

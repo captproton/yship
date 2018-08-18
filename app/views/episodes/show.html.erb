@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @episode.name %>
+</p>
+
+<p>
+  <strong>Permalink:</strong>
+  <%= @episode.permalink %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @episode.description %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @episode.notes %>
+</p>
+
+<p>
+  <strong>Published at:</strong>
+  <%= @episode.published_at %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @episode.position %>
+</p>
+
+<p>
+  <strong>Comments count:</strong>
+  <%= @episode.comments_count %>
+</p>
+
+<p>
+  <strong>Seconds:</strong>
+  <%= @episode.seconds %>
+</p>
+
+<p>
+  <strong>Asciicasts:</strong>
+  <%= @episode.asciicasts %>
+</p>
+
+<p>
+  <strong>Legacy:</strong>
+  <%= @episode.legacy %>
+</p>
+
+<p>
+  <strong>File sizes:</strong>
+  <%= @episode.file_sizes %>
+</p>
+
+<%= link_to 'Edit', edit_episode_path(@episode) %> |
+<%= link_to 'Back', episodes_path %>

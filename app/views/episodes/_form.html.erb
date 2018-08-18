@@ -1,0 +1,23 @@
+
+<%= simple_form_for(@episode) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :permalink %>
+    <%= f.input :description %>
+    <%= f.input :notes %>
+    <%= f.input :published_at %>
+    <%= f.input :position %>
+    <%= f.input :comments_count %>
+    <%= f.input :seconds %>
+    <%= f.input :asciicasts %>
+    <%= f.input :legacy %>
+    <%= f.input :file_sizes %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
