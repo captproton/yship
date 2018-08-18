@@ -36,4 +36,4 @@ Rails.application.configure do
   config.action_mailer.asset_host = ENV.fetch("ASSET_HOST", ENV.fetch("APPLICATION_HOST"))
   config.force_ssl = true
 end
-Rack::Timeout.timeout = (ENV["RACK_TIMEOUT"] || 10).to_i
+# Rack::Timeout.service_timeout = (ENV["RACK_TIMEOUT"] || 10).to_i
