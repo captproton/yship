@@ -64,3 +64,12 @@ gem 'bullet', group: [:development, :test]
 
 ## app-specific gems
 gem 'foundation-rails', '~> 6.4', '>= 6.4.3.0'
+gem "redcarpet"
+gem "coderay"
+gem "whenever", :require => false
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+gem 'omniauth', '~> 1.8', '>= 1.8.1'
+gem 'exception_notification', '~> 4.2', '>= 4.2.2'
+gem 'ancestry', '~> 3.0', '>= 3.0.2'
+gem 'cancancan', '~> 2.2'
+gem 'paper_trail', '~> 9.2'
