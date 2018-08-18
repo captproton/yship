@@ -61,3 +61,6 @@ gem 'shoulda-matchers', group: :test
 gem 'capybara-webkit', group: :test
 gem 'simple_form'
 gem 'bullet', group: [:development, :test]
+
+## app-specific gems
+gem 'foundation-rails', '~> 6.4', '>= 6.4.3.0'
