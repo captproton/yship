@@ -48,11 +48,11 @@ class EpisodesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_episode
-      @episode = Episode.find(params[:id])
+      @episode = Episode.friendly.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
     def episode_params
-      params.require(:episode).permit(:name, :permalink, :description, :notes, :published_at, :position, :comments_count, :seconds, :asciicasts, :legacy, :file_sizes)
+      params.require(:episode).permit(:name, :permalink, :description, :notes, :published_at, :position, :comments_count, :seconds, :asciicasts, :legacy, :file_sizes, :duration)
     end
 end

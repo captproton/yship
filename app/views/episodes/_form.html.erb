@@ -3,21 +3,20 @@
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-  <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :permalink %>
-    <%= f.input :description %>
-    <%= f.input :notes %>
-    <%= f.input :published_at %>
+<div class="content form-inputs">
+  <p><strong>Please follow the <%#= link_to "moderator guidelines", moderators_path %>.</strong></p>
+    <%#= f.error_messages %>
     <%= f.input :position %>
-    <%= f.input :comments_count %>
-    <%= f.input :seconds %>
-    <%= f.input :asciicasts %>
-    <%= f.input :legacy %>
-    <%= f.input :file_sizes %>
-  </div>
-
+    <%= f.input :name %>
+    <%#= f.input :tag_names, :label => "Tags" %>
+    <%= f.input :description, :type => :text_area, :rows => 6 %>
+    <%= f.input :notes, :type => :text_area, :rows => 20, :cols => 80 %>
+    <%= f.input :published_at, :type => :date_select, :label => "Publish Date" %>
+    <%= f.input :duration %>
+    <%= f.input :asciicasts, :type => :check_box, :label => "Available on ASCIIcasts" %>
   <div class="form-actions">
     <%= f.button :submit %>
   </div>
-<% end %>
+
+  <% end %>
+</div>

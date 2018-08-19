@@ -73,3 +73,4 @@ gem 'exception_notification', '~> 4.2', '>= 4.2.2'
 gem 'ancestry', '~> 3.0', '>= 3.0.2'
 gem 'cancancan', '~> 2.2'
 gem 'paper_trail', '~> 9.2'
+gem 'friendly_id', '~> 5.2', '>= 5.2.4', require: "friendly_id"
