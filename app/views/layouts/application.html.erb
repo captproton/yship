@@ -12,8 +12,19 @@
   </head>
 
   <body>
+    <%#= render partial: 'top'%>
+    <%= render partial: 'nav_bar'%>
+    <%= render partial: 'announcement'%>
 
-    <%= yield %>
+    <div id="main">
+
+        <div class="content">
+          <%= yield %>
+        </div>
+
+    </div>
+    <%= render partial: 'footer'%>
+    <%= render partial: 'analytics'%>
 
   </body>
 </html>

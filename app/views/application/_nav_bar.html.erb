@@ -1,0 +1,23 @@
+<div class="top-bar" id="nav_bar">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">Y Ship</li>
+      <li>
+       	<%= link_to "Browse Episodes", episodes_path %>
+      </li>
+        <li><a href="/about">About</a></li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+    <form accept-charset="UTF-8" action="http://railscasts.com/episodes" method="get">
+        <div style="margin:0;padding:0;display:inline">
+            <input name="utf8" type="hidden" value="&#x2713;" />
+        </div>
+        <input id="search" name="search" size="35" type="text" />
+        <input type="submit" value="Search Episodes"  />
+    </form>
+    </ul>
+  </div>
+</div>
+
