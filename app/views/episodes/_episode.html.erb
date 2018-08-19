@@ -1,0 +1,26 @@
+<div class="episode" id="episode_476">
+    <div class="screenshot">
+    	<%= link_to(episode) do %>
+    		<img alt="image_alt" src="/static/episodes/stills/417-foundation.png" width="200" height="125">
+    	<% end %>
+    </div>
+    <div class="main">
+        <div class="info">
+            <span class="number">Episode #417</span> –
+            <span class="published_at"><%= episode.published_at %></span> –
+            <span class="comments"><a href="/episodes/417-foundation?view=comments">333 comments</a></span>
+        </div>
+        <h2>
+        	<%= link_to episode.name, episode_path(episode) %>
+    	</h2>
+        <div class="description">
+            <%= episode.description %>
+            <span class="stats">(<%#= episode.minutes %> minutes)</span>
+        </div>
+        <div class="watch">
+        	<%= link_to "Watch Episode", episode_path(episode, autoplay: true), class: "pretty_button" %>
+        	<%= link_to "Read Episode", episode_path(episode, view: "asciicast"), class: "pretty_button read_button" %>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
